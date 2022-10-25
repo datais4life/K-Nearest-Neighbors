@@ -1,1 +1,2 @@
 # K-Nearest-Neighbors
+<p> A data set is cleaned and wrangled in preparation of performing a k-nearest neighbor analysis. Using Python 3 and a Jupyter Notebook, the data is evaluated to produce the variables that are closest to the target variable assigned. The data is portioned into training and testing sets using Sci-Kit Learn’s train_test_split function so that the final analysis can be run on raw data to verify the accuracy of the model using the Area Under the Curve method. </p>
