@@ -1,2 +1,32 @@
-# K-Nearest-Neighbors
-<p> A data set is cleaned and wrangled in preparation of performing a k-nearest neighbor analysis. Using Python 3 and a Jupyter Notebook, the data is evaluated to produce the variables that are closest to the target variable assigned. The data is portioned into training and testing sets using Sci-Kit Learn’s train_test_split function so that the final analysis can be run on raw data to verify the accuracy of the model using the Area Under the Curve method. </p>
+# Churn KNN classifier
+
+## Maintainer:
+data.is4life@gmail.com
+
+### Summary: 
+
+Churn classification model using K-Nearest Neighbor analysis. Dockerized streamlit app written using Python 3.9.16 slim buster image.  
+The KNN model is built using Scikit Learn's KNeighborsClassifier and analyzed using plots constructed with Matplotlib and Seaborn.  
+The data is an ingested csv file with telecommunication customer data and a churn variable detailing if the customer has churned in the past 12 months from the provider. 
+
+### Instructions:
+
+With Docker running, use this code to build the docker image.  
+
+docker build -t churn_knn:v1 .  
+
+Once the image is constructed, run this code to run the image and view the app.  
+
+docker run -d -p 8501:8501 churn-knn:v1 
+
+![](images/overview.png)
+
+### Final Prediction:
+
+The code cleans the data file, wrangles the categorical variables into numeric values, builds and tunes the model. A new customeer parameter is defined and the model produces the chart shown as the final output.  
+
+
+![](images/final_prediction.png)
+
+
+

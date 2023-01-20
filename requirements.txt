@@ -1,0 +1,9 @@
+matplotlib
+seaborn
+scikit-learn
+streamlit
+pandas
+numpy
+altair
+scipy
+#backports.zoneinfo;python_version<"3.9"
